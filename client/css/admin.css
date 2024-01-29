@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #3498db;
+    /* Blue color for the headings */
+}
+
+
+/* Admin Dashboard Styles */
+
+#adminPage {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#filterOptions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#completeTransactionsList {
+    list-style: none;
+    padding: 0;
+}
+
+#completeTransactionsList li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+
+/* Borrower and Lender Dashboard Styles */
+
+#borrowerDashboard,
+#lenderDashboard {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#loanRequestsList,
+#pastLoansList {
+    list-style: none;
+    padding: 0;
+}
+
+#loanRequestsList li,
+#pastLoansList li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}

@@ -1,0 +1,43 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrower Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link your stylesheet here -->
+</head>
+
+<body>
+    <template name="borrower">
+    <h1>Welcome to the Borrower Dashboard</h1>
+
+    <div id="borrowerPage">
+        <h2>Request Loan</h2>
+
+        <form id="loanRequestForm">
+            <label for="amount">Loan Amount:</label>
+            <input type="number" id="amount" required>
+
+            <button type="button" onclick="requestLoan()">Submit Request</button>
+        </form>
+
+        <h2>Past Loans</h2>
+
+        <ul id="pastLoansList">
+            <!-- Sample past loan items, replace with actual data from the server -->
+            <li>Loan 1: $1000 (Date: 2024-01-26)</li>
+            <li>Loan 2: $1500 (Date: 2024-01-24)</li>
+            <!-- Add more list items as needed -->
+        </ul>
+    </div>
+
+    <script>
+        function requestLoan() {
+            const amount = document.getElementById('amount').value;
+
+            // Make API call to backend to request a loan
+            // Example: fetch('/api/loan/request', { method: 'POST', body: JSON.stringify({ amount }), headers: { 'Content-Type': 'application/json' } })
+            // Handle the response as needed
+        }
+    </script>
+</template>
+</body>
